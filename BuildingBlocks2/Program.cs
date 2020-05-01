@@ -18,23 +18,17 @@ namespace BuildingBlocks2
             Console.WriteLine(48 / 4);
             Console.WriteLine(3 * 102);
             Console.WriteLine(10 % -8);
-
-            var x = 500;
-            var y = 0;
             try
             {
-                Console.WriteLine("{0} / {1} = {2}", y, x, IntResult (y, x) / IntResult (y, x));
+                int result = 500 / int.Parse("0");
+                Console.WriteLine(result);
             }
             catch (DivideByZeroException e)
             {
                 Console.WriteLine(e.Message);
+                Console.ReadLine();
             }
-                    }
-
-        private static int IntResult(int y, int x)
-        {
-            throw new NotImplementedException();
         }
     }
-    
+
 }
